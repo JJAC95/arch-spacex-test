@@ -1,6 +1,6 @@
 import { useQuery } from "react-query";
 import fetchData from "../helpers/fetchData";
-const fetchAllDragonsData = () => {
+const FetchAllDragonsData = () => {
   return useQuery("dragons", () =>
     fetchData("https://api.spacexdata.com/v3/dragons", {
       staleTime: Infinity,
@@ -9,4 +9,4 @@ const fetchAllDragonsData = () => {
   );
 };
 
-export default fetchAllDragonsData;
+export default FetchAllDragonsData;
